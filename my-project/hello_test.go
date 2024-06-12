@@ -7,7 +7,7 @@ func TestHello(t *testing.T) {
 		assertCorrectMessage(t, Hello("Chris"), "Hello, Chris")
 	})
 
-	t.Run("Hello defaults to world if no name is supplied", func(t *testing.T) {
+	t.Run("empty string defaults to 'world'", func(t *testing.T) {
 		assertCorrectMessage(t, Hello("tg"), "Hello, World")
 	})
 }
