@@ -8,7 +8,7 @@ func TestHello(t *testing.T) {
 	})
 
 	t.Run("empty string defaults to 'world'", func(t *testing.T) {
-		assertCorrectMessage(t, Hello("tg"), "Hello, World")
+		assertCorrectMessage(t, Hello(""), "Hello, World")
 	})
 }
 
